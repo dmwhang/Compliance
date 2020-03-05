@@ -4,7 +4,7 @@ import os
 import math
 
 # Global variables
-profiles = ['054288142014','143555422618','159592469094', '217386048230', '263734463344', '707965404768', '725071466363']
+profiles = ['123456789012']
 regions = ['us-east-1']
 delta = datetime.timedelta(days=1)
 counter = 1
