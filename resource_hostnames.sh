@@ -11,12 +11,4 @@ do
     echo ec2 instances:
     aws ec2 describe-instances --region ${region} --query \
     'Reservations[*].Instances[*].{Instance:InstanceId,PrivateHostName:PrivateDnsName,PublicHostName:PublicDnsName}'
-#    arns=$(aws resourcegroupstaggingapi get-resources --region
-#     ${region} | grep "ResourceARN" |
-#     sed -e 's/.*            "ResourceARN": "//' -e 's/ .*$//' -e 's/",.*$//')
-#    for arn in ${arns}
-#    do
-#        echo    $(echo ${arn} | sed "s/arn:aws://" | sed "s/:.*//" ): ${arn}
-#    done
-#    echo
 done
